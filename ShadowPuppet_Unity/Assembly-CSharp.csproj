@@ -1,18 +1,21 @@
-﻿<Project ToolsVersion="Current" Sdk="Microsoft.NET.Sdk">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <!-- Generated file, do not modify, your changes will be overwritten (use AssetPostprocessor.OnGeneratedCSProject) -->
   <PropertyGroup>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
-    <EnableDefaultItems>false</EnableDefaultItems>
-    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <LangVersion>9.0</LangVersion>
-    <Configurations>Debug;Release</Configurations>
+  </PropertyGroup>
+  <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
+    <ProjectGuid>{97608A3B-ADC5-EEC2-BF27-6623F8AF528B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -36,13 +39,14 @@
     <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
-    <NoStandardLibraries>true</NoStandardLibraries>
-    <NoStdLib>true</NoStdLib>
     <NoConfig>true</NoConfig>
-    <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
-    <MSBuildWarningsAsMessages>MSB3277</MSBuildWarningsAsMessages>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
     <UnityProjectGeneratorVersion>2.0.21</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
@@ -50,61 +54,13 @@
     <UnityVersion>2022.3.11f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Marco\DynamicShadowProjector\Scripts\MipmappedShadowFallback.cs" />
-    <Compile Include="Assets\Marco\DynamicShadowProjector\Scripts\DrawTargetObject.cs" />
-    <Compile Include="Assets\Marco\DynamicShadowProjector\Samples\Scripts\Rotate.cs" />
-    <Compile Include="Assets\Marco\DynamicShadowProjector\Samples\Scripts\Swing.cs" />
-    <Compile Include="Assets\Marco\DynamicShadowProjector\Scripts\ShadowTextureRenderer.cs" />
-    <Compile Include="Assets\Marco\DynamicShadowProjector\Scripts\PropertyBlockForTransparentReceiver.cs" />
-    <Compile Include="Assets\Marco\DynamicShadowProjector\Scripts\FollowTargetObject.cs" />
-    <Compile Include="Assets\Marco\DynamicShadowProjector\Scripts\DrawSceneObject.cs" />
-    <Compile Include="Assets\Marco\DynamicShadowProjector\Samples\Scripts\FPSCheck.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Projector\Dynamic\LightxShadowWithLinearFalloff.shader" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Shadow\DSPShadow.cginc" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Projector\ShadowWithLinearFalloff.shader" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\EnableCbuffer.cginc" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Blit\Downsample.cginc" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Projector\LightWithLinearFalloff.shader" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Projector\Invisible.shader" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Blit\Blit.shader" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Shadow\ShadowTransparentCutout.shader" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Projector\UnityShaderVariablesForSRP.cginc" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Projector\Dynamic\ShadowWithLinearFalloff.shader" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Projector\Dynamic\LightxShadowWithoutFalloff.shader" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Projector\Dynamic\SimpleShadowWithoutFalloff.shader" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Blit\DownsampleFallback.shader" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Readme.txt" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Shadow\ShadowForReplacement.shader" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Projector\SimpleShadowWithoutFalloff.shader" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Blit\CopyMipmap.shader" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Blit\Blur.shader" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Blit\EraseShadow.shader" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Projector\Dynamic\ShadowWithoutFalloff.shader" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Projector\DSPMipmappedShadow.cginc" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Projector\LightxShadowWithLinearFalloff.shader" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Projector\MipmappedShadowForLightmapSubtractive.shader" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Projector\LightxShadowWithoutFalloff.shader" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Projector\SimpleShadowWithLinearFalloff.shader" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Shadow\ShadowOpaque.shader" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Projector\Dynamic\MipmappedShadowForLightmapSubtractive.shader" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Caps\tex2DlodExtensionCheck.shader" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Projector\Dynamic\SimpleShadowWithLinearFalloff.shader" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Projector\Dynamic\MipmappedShadowForLightmapShadowmask.shader" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Projector\ShadowWithoutFalloff.shader" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Shadow\ShadowTransparent.shader" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Projector\MipmappedShadowForLightmapShadowmask.shader" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Blit\Downsample.shader" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Caps\glslCheck.shader" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Projector\LightWithoutFalloff.shader" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Projector\MipmappedShadow.shader" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Projector\DSPProjector.cginc" />
-    <None Include="Assets\Marco\DynamicShadowProjector\Shaders\Projector\Dynamic\MipmappedShadow.shader" />
+    <Compile Include="Assets\Marco\Scripts\AnimationControl.cs" />
+    <Compile Include="Assets\Marco\Scripts\DistanceDetection.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -361,6 +317,9 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.1\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Valve.Newtonsoft.Json">
+      <HintPath>Assets\SteamVR\Input\Plugins\JSON.NET\Valve.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -728,17 +687,65 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.11f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.XR.Management">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.EditorCoroutines.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.PlasticSCM.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XR.LegacyInputHelpers">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Shared.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SpatialTracking">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Core">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Core.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Flow">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Flow.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
       <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.EditorCoroutines.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+    <Reference Include="Unity.XR.OpenVR.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.OpenVR.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
@@ -752,38 +759,20 @@
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
       <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.PlasticSCM.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+    <Reference Include="Unity.XR.Management.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.Management.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Shared.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+    <Reference Include="Unity.XR.OpenVR">
+      <HintPath>Library\ScriptAssemblies\Unity.XR.OpenVR.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Core">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Core.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
@@ -791,13 +780,36 @@
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Flow">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Flow.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="SteamVR.csproj">
+      <Project>{12E0021B-F24A-2B75-BDC3-E858A736ACEA}</Project>
+      <Name>SteamVR</Name>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR_Actions.csproj">
+      <Project>{3E9FAC39-9E14-B4CB-FA46-7DCEEB530962}</Project>
+      <Name>SteamVR_Actions</Name>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR_Windows_EditorHelper.csproj">
+      <Project>{D9BBE369-1846-829E-2DEB-823B1F17ACE8}</Project>
+      <Name>SteamVR_Windows_EditorHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR_Input_Editor.csproj">
+      <Project>{3BF758DB-AC07-DF78-5797-3360D25078AE}</Project>
+      <Name>SteamVR_Input_Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="SteamVR_Editor.csproj">
+      <Project>{4FEFD87C-5DDE-92F4-3BBD-798AFD961B44}</Project>
+      <Name>SteamVR_Editor</Name>
+    </ProjectReference>
   </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
 </Project>
