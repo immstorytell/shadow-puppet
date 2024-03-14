@@ -12,8 +12,11 @@ public class DistanceDetection : MonoBehaviour
     public float DistanceY;
     public float DistanceZ;
 
+
+
+
     // Start is called before the first frame update
-    
+
     void Start () {
 
       
@@ -33,6 +36,8 @@ public class DistanceDetection : MonoBehaviour
         DistanceX = positionA.x - positionB.x;
         DistanceY = positionA.y - positionB.y;
         DistanceZ = positionA.z - positionB.z;
+
+
 
     }
 }
